@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="robots" content="index, follow">
+
+        <link href="ui/css/css_bootstrap/bootstrap.min.css" rel="stylesheet" >
+        <link href="ui/css/css_bootstrap/bootstrap-grid.min.css" rel="stylesheet" >
+        <link href="ui/css/css_bootstrap/bootstrap-reboot.min.css" rel="stylesheet" >
+
+        <!--Arquivos personalizados-->
+        <!--        <link href="ui/css/ui_tema-principal.css" rel="stylesheet" >-->
+        <link href="ui/css/ui_Objetos.css" rel="stylesheet" >        
+        <link href="ui/css/ui_pag-Busca.css" rel="stylesheet" >
+
+
+
+        <title>TJ Docs - Tribunal de Justiça do Estado de Goiás</title>
+    </head>
+
+    <body>
+        <div class="principal">
+
+
+            <div class="princpl-header">
+
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <h1>
+                        <a href="index.html" title="T J dócs" id="Princpl-TJdocs_Logo">
+                            <img class="logo_TJdocs" src="ui/img/TJdocs_Logo.png">
+                        </a>
+                    </h1>
+
+                    <button class="n-collps-button icones" type="button" data-toggle="collapse" data-target="#navbarPrincipal" title="Expandir menu">
+                        <img class="icones" src="ui/img/Menu_icon.svg">
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarPrincipal">
+
+                        <div class="p-hedr-busca flex-grow-1">
+                            <form class="">
+                                <div class="busca_Principal">
+                                    <input class="w-100 busca_P-input" type="search" placeholder="Digite os termos da sua pesquisa.">    
+                                    <img class="busca_P-icone icones svg-cinza" src="ui/img/Search-Icon.svg">
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="p-hedr-opceos d-flex align-items-center flex-grow-1">
+                            <div class="flex-grow-1">
+                                <a class="icones" href="#" id="paginaHistorico" title="Documentos recentes" role="button">
+                                    <img class="icones svg-comHover" src="ui/img/History-Icon.svg">
+                                </a>
+                            </div>
+
+                            <span class="icones" ></span>
+                            <span class="icones" ></span>
+
+                            <a class="icones theme-link" data-theme="contraste" href="#" id="alterar_Ui-Tema" title="Inverter cores" role="button">
+                                <img class="icones" src="ui/img/genereicIcon.svg" alt="Tjdocs">
+                            </a>
+
+                            <p>
+                                <a class="icones" href="#" id="paginaLogin">
+                                    Entrar
+                                </a>
+                            </p>
+                        </div>  
+                    </div>
+                </nav>
+
+            </div>
+
+
+            <div class="princpl-conteudo">
+
+                <div class="p-contd-menuTopo d-flex align-items-center">
+                    <div class="p-c-menTp-Endereco flex-grow-1">
+                        <h3>
+                            ... > Pasta1 > Pasta2 > Pasta4
+                        </h3>
+                    </div>
+                    <div class="p-c-menTp-Opcoes">
+                        <span>
+                            <a class="icones" title="Ordernado por data.">
+                                <img class="icones" src="ui/img/Sort_By-Icon.svg" alt="Aquivos ordernados por data.">
+                            </a>
+                        </span>
+                    </div>
+                </div>        
+
+
+                <div class="p-contd-busca">
+
+                    <div class="p-c-busc-quantificacao">
+                        Sua busca obteve 999999 resultados.
+                    </div>
+                    
+                    <h4 class="sr-only" tabindex="0" id="P-Inicio_DisplayMiniaturas">
+                        Resultados da pesquisa, página 2:
+                    </h4>
+
+                    <div class="p-c-busc-resultado">
+                        <div>
+                            <a href="#">
+                                <p class="p-c-b-resltd-titulo">
+                                    Decreto J nº 9 - A 2.pdf
+                                </p>
+                            </a>
+                            <p class="p-c-b-resltd-endereco">
+                                <span class="sr-only">
+                                    Local do arquivo:
+                                </span>
+                                Corte Especial > RESOLUÇÕES > 1992
+                            </p>
+                            <p class="p-c-b-resltd-descricao">
+                                <span class="sr-only">
+                                    Descrição:
+                                </span>
+                                "Despachos Administrativos... 
+                            </p>
+                            <p class="p-c-b-resltd-data">
+                                Enviado em: 
+                                <span class="p-c-b-resltd-endereco p-c-b-resltd-data">
+                                    20 de Março de 2014 às 09:24.
+                                </span>
+                                Tamanho: 
+                                <span class="p-c-b-resltd-endereco p-c-b-resltd-data">
+                                    5,4
+                                    <span aria-hidden="true">
+                                        KB
+                                    </span>
+                                    <span class="sr-only">
+                                        KBytes
+                                    </span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                    
+                    <!--junk data-->
+                    <div class="p-c-busc-resultado"><div><a href="#"><p class="p-c-b-resltd-titulo">Decreto J nº 9 - A 2.pdf</p></a><p class="p-c-b-resltd-endereco"><span class="sr-only">Local do arquivo:</span>Corte Especial > RESOLUÇÕES > 1992</p><p class="p-c-b-resltd-descricao"><span class="sr-only">Descrição:</span>"Despachos Administrativos... </p><p class="p-c-b-resltd-data">Enviado em:<span class="p-c-b-resltd-endereco p-c-b-resltd-data">20 de Março de 2014 às 09:24.</span>Tamanho:<span class="p-c-b-resltd-endereco p-c-b-resltd-data">5,4<span aria-hidden="true">KB</span><span class="sr-only">KBytes</span></span></p></div></div>
+                    <div class="p-c-busc-resultado"><div><a href="#"><p class="p-c-b-resltd-titulo">Decreto J nº 9 - A 2.pdf</p></a><p class="p-c-b-resltd-endereco"><span class="sr-only">Local do arquivo:</span>Corte Especial > RESOLUÇÕES > 1992</p><p class="p-c-b-resltd-descricao"><span class="sr-only">Descrição:</span>"Despachos Administrativos... </p><p class="p-c-b-resltd-data">Enviado em:<span class="p-c-b-resltd-endereco p-c-b-resltd-data">20 de Março de 2014 às 09:24.</span>Tamanho:<span class="p-c-b-resltd-endereco p-c-b-resltd-data">5,4<span aria-hidden="true">KB</span><span class="sr-only">KBytes</span></span></p></div></div>
+                    <div class="p-c-busc-resultado"><div><a href="#"><p class="p-c-b-resltd-titulo">Decreto Judiciário nº 99999-99999 - Altera o Decreto Judiciário nº 9999-29999.pdf</p></a><p class="p-c-b-resltd-endereco"><span class="sr-only">Local do arquivo:</span>Corte Especial > RESOLUÇÕES > 1992</p><p class="p-c-b-resltd-descricao"><span class="sr-only">Descrição:</span>"Despachos Administrativos... </p><p class="p-c-b-resltd-data">Enviado em:<span class="p-c-b-resltd-endereco p-c-b-resltd-data">20 de Março de 2014 às 09:24.</span>Tamanho:<span class="p-c-b-resltd-endereco p-c-b-resltd-data">5,4<span aria-hidden="true">KB</span><span class="sr-only">KBytes</span></span></p></div></div>
+                    <div class="p-c-busc-resultado"><div><a href="#"><p class="p-c-b-resltd-titulo">Decreto J nº 9 - A 2.pdf</p></a><p class="p-c-b-resltd-endereco"><span class="sr-only">Local do arquivo:</span>Corte Especial > RESOLUÇÕES > 1992</p><p class="p-c-b-resltd-descricao"><span class="sr-only">Descrição:</span>"Despachos Administrativos... </p><p class="p-c-b-resltd-data">Enviado em:<span class="p-c-b-resltd-endereco p-c-b-resltd-data">20 de Março de 2014 às 09:24.</span>Tamanho:<span class="p-c-b-resltd-endereco p-c-b-resltd-data">5,4<span aria-hidden="true">KB</span><span class="sr-only">KBytes</span></span></p></div></div>
+                    <div class="p-c-busc-resultado"><div><a href="#"><p class="p-c-b-resltd-titulo">Decreto J nº 9 - A 2.pdf</p></a><p class="p-c-b-resltd-endereco"><span class="sr-only">Local do arquivo:</span>Corte Especial > RESOLUÇÕES > 1992</p><p class="p-c-b-resltd-descricao"><span class="sr-only">Descrição:</span>"Despachos Administrativos... </p><p class="p-c-b-resltd-data">Enviado em:<span class="p-c-b-resltd-endereco p-c-b-resltd-data">20 de Março de 2014 às 09:24.</span>Tamanho:<span class="p-c-b-resltd-endereco p-c-b-resltd-data">5,4<span aria-hidden="true">KB</span><span class="sr-only">KBytes</span></span></p></div></div>
+                    <div class="p-c-busc-resultado"><div><a href="#"><p class="p-c-b-resltd-titulo">Decreto J nº 9 - A 2.pdf</p></a><p class="p-c-b-resltd-endereco"><span class="sr-only">Local do arquivo:</span>Corte Especial > RESOLUÇÕES > 1992</p><p class="p-c-b-resltd-descricao"><span class="sr-only">Descrição:</span>"Despachos Administrativos... </p><p class="p-c-b-resltd-data">Enviado em:<span class="p-c-b-resltd-endereco p-c-b-resltd-data">20 de Março de 2014 às 09:24.</span>Tamanho:<span class="p-c-b-resltd-endereco p-c-b-resltd-data">5,4<span aria-hidden="true">KB</span><span class="sr-only">KBytes</span></span></p></div></div>
+                    <div class="p-c-busc-resultado"><div><a href="#"><p class="p-c-b-resltd-titulo">Decreto J nº 9 - A 2.pdf</p></a><p class="p-c-b-resltd-endereco"><span class="sr-only">Local do arquivo:</span>Corte Especial > RESOLUÇÕES > 1992</p><p class="p-c-b-resltd-descricao"><span class="sr-only">Descrição:</span>"Despachos Administrativos... </p><p class="p-c-b-resltd-data">Enviado em:<span class="p-c-b-resltd-endereco p-c-b-resltd-data">20 de Março de 2014 às 09:24.</span>Tamanho:<span class="p-c-b-resltd-endereco p-c-b-resltd-data">5,4<span aria-hidden="true">KB</span><span class="sr-only">KBytes</span></span></p></div></div>
+                    <div class="p-c-busc-resultado"><div><a href="#"><p class="p-c-b-resltd-titulo">Decreto J nº 9 - A 2.pdf</p></a><p class="p-c-b-resltd-endereco"><span class="sr-only">Local do arquivo:</span>Corte Especial > RESOLUÇÕES > 1992</p><p class="p-c-b-resltd-descricao"><span class="sr-only">Descrição:</span>"Despachos Administrativos... </p><p class="p-c-b-resltd-data">Enviado em:<span class="p-c-b-resltd-endereco p-c-b-resltd-data">20 de Março de 2014 às 09:24.</span>Tamanho:<span class="p-c-b-resltd-endereco p-c-b-resltd-data">5,4<span aria-hidden="true">KB</span><span class="sr-only">KBytes</span></span></p></div></div>
+                    
+                    
+                    
+
+                    <div class="p-c-b-paginacao">
+                        <div class="d-flex justify-content-center">
+                            <div class="p-c-b-pagnc-paginas icones">
+                                <a href="#" title="Página anterior" role="button">
+                                    <img class="icones" src="ui/img/Left_arrow-Icon.svg">
+                                </a>
+                            </div>
+                            <div class="p-c-b-pagnc-paginas  my-auto">
+                                <a href="#">
+                                    <span class="sr-only">
+                                        Página 1
+                                    </span>
+                                    <span aria-hidden="true">
+                                        1
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="p-c-b-pagnc-paginas  my-auto">
+                                <a href="#">
+                                    <span class="sr-only">
+                                        Página 2
+                                    </span>
+                                    <span aria-hidden="true" style="color: var(--paleta_cinza_escuro)">
+                                        2
+                                    </span>                             
+                                </a>
+                            </div>
+                            <div class="p-c-b-pagnc-paginas  my-auto">
+                                <a href="#">
+                                    <span class="sr-only">
+                                        Página 3
+                                    </span>
+                                    <span aria-hidden="true">
+                                        3
+                                    </span>                           
+                                </a>
+                            </div>
+                            <div class="p-c-b-pagnc-paginas icones">
+                                <a href="#" title="Página seguinte" role="button">
+                                    <img class="icones" src="ui/img/Right_arrow-Icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="footer">
+
+                <!--This is a footer-->
+
+            </div>
+
+
+
+            <script type="text/javascript" src="ux/js/jquery-3.3.1.min.js"></script>
+            <script type="text/javascript" src="ux/js/popper.min.js"></script>
+            <script type="text/javascript" src="ux/js/js_bootstrap/bootstrap.min.js"></script>
+            <script type="text/javascript" src="ux/js/imgTag_to_svgTag.js"></script>
+            <script type="text/javascript" src="ux/js/ux_pag-busca.js"></script>
+
+
+        </div>
+    </body>
+</html>

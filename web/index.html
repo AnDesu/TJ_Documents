@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="robots" content="index, follow">
+
+        <link href="ui/css/css_bootstrap/bootstrap.min.css" rel="stylesheet" >
+        <link href="ui/css/css_bootstrap/bootstrap-grid.min.css" rel="stylesheet" >
+        <link href="ui/css/css_bootstrap/bootstrap-reboot.min.css" rel="stylesheet" >
+
+        <!--Arquivos personalizados-->
+        <!--        <link href="ui/css/ui_tema-principal.css" rel="stylesheet" >-->
+        <link href="ui/css/ui_Objetos.css" rel="stylesheet" >        
+        <link href="ui/css/ui_pag-Principal.css" rel="stylesheet" >
+
+
+
+        <title>TJ Docs - Tribunal de Justiça do Estado de Goiás</title>
+    </head>
+
+    <body>
+        <div class="principal">
+
+
+            <div class="princpl-header">
+
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <h1>
+                        <a href="index.html" title="T J dócs" id="Princpl-TJdocs_Logo">
+                            <img class="logo_TJdocs" src="ui/img/Logo_TJdocs.svg">
+                        </a>
+                    </h1>
+
+                    <button class="n-collps-button icones" type="button" data-toggle="collapse" data-target="#navbarPrincipal" title="Expandir menu">
+                        <img class="icones" src="ui/img/Menu_icon.svg">
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarPrincipal">
+
+                        <div class="p-hedr-busca flex-grow-1">
+                            <form class="">
+                                <div class="busca_Principal">
+                                    <input class="w-100 busca_P-input" type="search" placeholder="Digite os termos da sua pesquisa.">    
+                                    <img class="busca_P-icone icones svg-cinza" src="ui/img/Search-Icon.svg">
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="p-hedr-opceos d-flex align-items-center flex-grow-1">
+                            <div class="flex-grow-1">
+                                <a class="icones" href="#" id="paginaHistorico" title="Documentos recentes" role="button">
+                                    <img class="icones svg-comHover" src="ui/img/History-Icon.svg">
+                                </a>
+                            </div>
+
+                            <span class="icones" ></span>
+                            <span class="icones" ></span>
+
+                            <a class="icones theme-link" data-theme="default" href="#" id="alterar_Ui-Tema" title="Modificar Contraste" role="button">
+                                <img class="icones" src="ui/img/High_Contrast-Icon.svg" alt="Tjdocs">
+                            </a>
+
+                            <p>
+                                <a class="icones" href="#" id="paginaLogin">
+                                    Entrar
+                                </a>
+                            </p>
+                        </div>  
+                    </div>
+                </nav>
+
+            </div>
+
+
+            <div class="princpl-conteudo">
+
+                <div class="p-contd-menuTopo d-flex align-items-center">
+                    <div class="p-c-menTp-Endereco flex-grow-1">
+                        <!--<h3>... > Pasta1 > Pasta2 > Pasta4</h3>-->
+                        <h3>
+                            Raiz
+                        </h3>
+                    </div>
+                    <div class="p-c-menTp-Opcoes">
+                        <span>
+                            <a class="icones" title="Ordernado por data.">
+                                <img class="icones" src="ui/img/Sort_By-Icon.svg" alt="Aquivos ordernados por data.">
+                            </a>
+                            <a class="icones d-none" href="#" id="alterar_P-DisplayMiniaturas" title="Visualização em grade." role="button">
+                                <img class="icones svg-comHover" src="ui/img/Display_Miniatures-Icon.svg">
+                            </a>
+                            <a class="icones" href="#" id="alterar_P-DisplayLista" title="Visualização em lista." role="button">
+                                <img class="icones svg-comHover" src="ui/img/Display_List-Icon.svg">
+                            </a>
+                        </span>
+                    </div>
+                </div>        
+
+
+                <div class="p-contd-pastas">
+
+
+                    <div class="table-responsive p-contd-pasts-lista d-none" id="P-DisplayLista">
+                        <h4 class="sr-only" tabindex="0" id="P-Inicio_DisplayLista">
+                            Documentos listados em tabela.
+                        </h4>
+                        <table class="table  table-sm table-hover" tabindex="0" summary=" :  Documentos">
+
+                            <thead tabindex="0">
+                                <tr>
+                                    <!--                                    <th scope="col">Nome</th>
+                                                                        <th scope="col">Data/Hora</th>
+                                                                        <th scope="col">Tamanho</th>-->
+
+                                    <th id="p-c-p-l-Tabl-Nome">Nome</th>
+                                    <th id="p-c-p-l-Tabl-Data">Data/Hora</th>
+                                    <th id="p-c-p-l-Tabl-Tamanho">Tamanho</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="tabByArrow" tabindex="0">
+                                    <td headers="p-c-p-l-Tabl-Nome">
+                                        <img class="icones" src="ui/img/Dominio_icon.svg" aria-hidden="true">
+                                        <span class="sr-only">
+                                            Domínio:
+                                        </span>
+                                        Domínio aleatório
+                                    </td>
+                                    <td headers="p-c-p-l-Tabl-Data">
+                                        31 de Dezembro de 9, 18:07
+                                    </td>
+                                    <td headers="p-c-p-l-Tabl-Tamanho" aria-hidden="true">
+                                        77 <abbr title="KBytes,">KB</abbr>
+                                    </td>
+                                </tr>
+                                <tr class="tabByArrow" tabindex="0">
+                                    <td>
+                                        <img class="icones icones-arquivo" src="ui/img/File-Icon.svg" aria-hidden="true">
+                                        <span class="sr-only">
+                                            Arquivo:
+                                        </span>
+                                        Atas da Comissão de Informatização
+                                    </td>
+                                    <td>31 de Dezembro de 29999, 18:07</td>
+                                    <td>9999 GB</td>
+                                </tr>
+                                <tr class="tabByArrow" tabindex="0">
+                                    <td>
+                                        <img class="icones icones-arquivo" src="ui/img/File-Icon.svg" aria-hidden="true">
+                                        <span class="sr-only">
+                                            Arquivo:
+                                        </span>
+                                        Atas da Comissão de Informatização
+                                    </td>
+                                    <td>31 de Dezembro de 29999, 18:07</td>
+                                    <td>520 KB</td>
+                                </tr>
+                                <tr class="tabByArrow" tabindex="0">
+                                    <td>
+                                        <img class="icones icones-pasta" src="ui/img/Folder_icon.svg" aria-hidden="true">
+                                        <span class="sr-only">
+                                            Pasta:
+                                        </span>
+                                        Decreto Judiciário nº 99999-99999 - Altera o Decreto Judiciário nº 9999-29999.pdf
+                                    </td>
+                                    <td>31 de Dezembro de 29999, 18:07</td>
+                                    <td>9999 GB</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>     
+
+
+                    <div class="" id="P-DisplayMiniaturas">
+                        <h4 class="sr-only" tabindex="0" id="P-Inicio_DisplayMiniaturas">
+                            Documentos listados em grade.
+                        </h4>
+                        <div class="p-cntd-pasts-miniaturas d-inline-flex flex-wrap">
+                            <div class="p-c-p-cards tabByArrow" tabindex="0">
+                                <div class="p-c-p-crds-imagem" aria-hidden="true">
+                                    <img class="imagem_Cards icones-arquivo svg-cinza" src="ui/img/Dominio_icon.svg">    
+                                </div>
+                                <div class="p-c-p-crds-texto">
+                                    <div class="p-c-p-c-txt-center">
+                                        <span class="sr-only">
+                                            Domínio:
+                                        </span>
+                                        asdsd
+                                        I'm vertically/ horizontally centered!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-c-p-cards tabByArrow" tabindex="0">
+                                <div class="p-c-p-crds-imagem" aria-hidden="true">
+                                    <img class="imagem_Cards icones-arquivo svg-cinza" src="ui/img/File-Icon.svg">    
+                                </div>
+                                <div class="p-c-p-crds-texto">
+                                    <div class="p-c-p-c-txt-center">
+                                        <span class="sr-only">
+                                            Arquivo:
+                                        </span>
+                                        Decreto Judiciário nº 1078-2017 - Altera o Decreto Judiciário nº 592-2017.pdf
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-c-p-cards tabByArrow" tabindex="0">
+                                <div class="p-c-p-crds-imagem" aria-hidden="true">
+                                    <img class="imagem_Cards icones-pasta svg-cinza" src="ui/img/Folder_icon.svg" aria-hidden="true">    
+                                </div>
+                                <div class="p-c-p-crds-texto">
+                                    <div class="p-c-p-c-txt-center">
+                                        <span class="sr-only">
+                                            Pasta:
+                                        </span>
+                                        Gab. Des. Carlos Escher
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-c-p-cards" tabindex="0">
+                                <div class="p-c-p-crds-imagem">
+                                    <img class="imagem_Cards icones-pasta svg-cinza" src="ui/img/Folder_icon.svg" aria-hidden="true">    
+                                </div>
+                                <div class="p-c-p-crds-texto">
+                                    <div class="p-c-p-c-txt-center">
+                                        Comissão de Informatização
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--junk data-->
+                            <div class="p-c-p-cards" tabindex="0"><div class="p-c-p-crds-imagem"><img class="imagem_Cards icones-pasta svg-cinza" src="ui/img/Folder_icon.svg" aria-hidden="true">    </div><div class="p-c-p-crds-texto"><div class="p-c-p-c-txt-center">Comissão de Informatização</div></div></div><div class="p-c-p-cards" tabindex="0"><div class="p-c-p-crds-imagem"><img class="imagem_Cards icones-pasta svg-cinza" src="ui/img/Folder_icon.svg" aria-hidden="true">    </div><div class="p-c-p-crds-texto"><div class="p-c-p-c-txt-center">Comissão de Informatização</div></div></div><div class="p-c-p-cards" tabindex="0"><div class="p-c-p-crds-imagem"><img class="imagem_Cards icones-pasta svg-cinza" src="ui/img/Folder_icon.svg" aria-hidden="true">    </div><div class="p-c-p-crds-texto"><div class="p-c-p-c-txt-center">Comissão de Informatização</div></div></div><div class="p-c-p-cards" tabindex="0"><div class="p-c-p-crds-imagem"><img class="imagem_Cards icones-pasta svg-cinza" src="ui/img/Folder_icon.svg" aria-hidden="true">    </div><div class="p-c-p-crds-texto"><div class="p-c-p-c-txt-center">Comissão de Informatização</div></div></div><div class="p-c-p-cards" tabindex="0"><div class="p-c-p-crds-imagem"><img class="imagem_Cards icones-pasta svg-cinza" src="ui/img/Folder_icon.svg" aria-hidden="true">    </div><div class="p-c-p-crds-texto"><div class="p-c-p-c-txt-center">Comissão de Informatização</div></div></div><div class="p-c-p-cards" tabindex="0"><div class="p-c-p-crds-imagem"><img class="imagem_Cards icones-pasta svg-cinza" src="ui/img/Folder_icon.svg" aria-hidden="true">    </div><div class="p-c-p-crds-texto"><div class="p-c-p-c-txt-center">Comissão de Informatização</div></div></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="footer">
+
+                This is a footer
+
+            </div>
+
+
+
+            <script type="text/javascript" src="ux/js/jquery-3.3.1.min.js"></script>
+            <script type="text/javascript" src="ux/js/popper.min.js"></script>
+            <script type="text/javascript" src="ux/js/js_bootstrap/bootstrap.min.js"></script>
+            <script type="text/javascript" src="ux/js/imgTag_to_svgTag.js"></script>
+            <script type="text/javascript" src="ux/js/index.js"></script>
+
+
+        </div>
+    </body>
+</html>

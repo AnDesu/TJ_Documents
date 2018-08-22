@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="robots" content="index, follow">
+
+        <link href="ui/css/css_bootstrap/bootstrap.min.css" rel="stylesheet" >
+        <link href="ui/css/css_bootstrap/bootstrap-grid.min.css" rel="stylesheet" >
+        <link href="ui/css/css_bootstrap/bootstrap-reboot.min.css" rel="stylesheet" >
+
+        <!--Arquivos personalizados-->
+        <link href="ui/css/ui_Objetos.css" rel="stylesheet" >        
+        <link href="ui/css/ui_pag-Login.css" rel="stylesheet" >
+
+        <title>
+            TJ Docs - Entrar
+        </title>
+    </head>
+
+    <body>
+        <div class="principal" id="principal">
+            <!--<div class="princpl-header">-->
+            <!--This is a header-->
+            <!--</div>-->
+
+            <div class="princpl-conteudo" id="princpl_conteudo">
+                <span id="Princpl-TJdocs_Logo">
+                    <img class="p-contd-Logo" src="ui/img/Logo_TJdocs.svg">
+                </span>
+
+                <div class="d-flex justify-content-center">
+                    <span id="p_c_TitlLgn_Link">
+<!--                        <a href="#3" onclick="Login_AcionarFormulario(-1)"><img class="icones-menor p-contd-Voltar" src="ui/img/Left_arrow-Icon.svg"></a>-->
+                    </span>
+                    <h2 id="p_contd_TituloLogin" tabindex="0">
+                        Entrar no TJ docs
+                    </h2>
+
+
+                </div>
+
+
+                <div class="busca_Principal mx-auto">  
+                    <div class="b_P-inpt_Loading w-100" id="b_P-inpt_Loading" >
+                        <img class="icones-menor svg-cinza" src="ui/img/Desaqui.svg" id="b_P_Loadng_Dot1">
+                        <img class="icones-menor svg-cinza" src="ui/img/Desaqui.svg" id="b_P_Loadng_Dot2">
+                        <img class="icones-menor svg-cinza" src="ui/img/Desaqui.svg" id="b_P_Loadng_Dot3">
+                    </div>
+                    <form action="#1" onsubmit="Login_AcionarFormulario(1)" id="Formulario_LoginSenha">
+                        <input class="busca_P-input w-100" type="text" placeholder="E-Mail" id="Input_LoginSenha">
+                    </form>
+                    <img class="busca_P-icone icones svg-cinza" id="Img_LoginIcon" src="ui/img/Next_Icon.svg">
+                </div>
+
+                <div class="p-contd-Checkbox custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="LembrarSenha">
+                    <label class="custom-control-label" for="LembrarSenha">Lembrar minha senha</label>
+                </div>
+
+
+            </div>
+
+
+            <!--<div class="footer">-->
+            <!--This is a footer-->
+            <!--</div>-->
+        </div>
+
+
+
+        <script type="text/javascript" src="ux/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="ux/js/popper.min.js"></script>
+        <script type="text/javascript" src="ux/js/js_bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="ux/js/imgTag_to_svgTag.js"></script>
+        <script type="text/javascript" src="ux/js/ux_pag-login.js"></script>
+    </body>
+</html>

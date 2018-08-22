@@ -1,0 +1,20 @@
+:root {
+    /*paleta tema original*/
+    --paleta_azul_escuro: #99ccff;    
+    --paleta_azul_medio: #66b3ff;
+    --paleta_azul_claro: #54A9FF;
+    --paleta_cinza_escuro: #FFFFFF;
+    --paleta_cinza_escr-fraco: #F6F7F9;
+    --paleta_cinza_md-escuro: #010c18;
+    --paleta_cinza_medio: #071A32;
+    --paleta_cinza_md-claro: yellow;
+    --paleta_cinza_claro: #1C314A;
+    --paleta_branco: #000000;    
+
+
+
+    --espacamento_unico: 10px;
+    --dimensoes_icones: 24px;
+    --tamanho_mudanca-layout: 768px;
+    --border_radius: 3px;
+}

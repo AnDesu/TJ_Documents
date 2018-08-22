@@ -1,0 +1,246 @@
+html, body
+{
+    height: 100%;
+    margin: 0;
+}
+
+
+html
+{
+    font-size: 10px;
+    display: none;
+}
+h1
+{
+    font-size: 2.4rem;
+    margin: 0px;
+}
+h2
+{
+    font-size: 2.2rem;
+    margin: 0px;
+}
+h3
+{
+    font-size: 2.0rem;
+    margin: 0px;
+}
+p
+{    
+    font-size: 1.8rem;
+    margin: 0px;
+}
+
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--paleta_cinza_md-escuro);
+    opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--paleta_cinza_md-escuro);
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--paleta_cinza_md-escuro);
+}
+
+
+
+a:link, a:visited, a:active
+{
+    color: var(--paleta_cinza_escuro);
+    text-decoration: none;
+}
+a:hover
+{
+    color: var(--paleta_cinza_escuro);
+    text-decoration: none;
+}
+
+
+
+.logo_TJdocs
+{
+    width: 119px;
+    height: 35px;
+    margin-right: var(--espacamento_unico);
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.logo_TJdocs path
+{
+    fill: var(--paleta_cinza_escuro) !important;
+}
+.imagem_Cards
+{
+    width: 80px;
+    height: 80px;
+}
+
+.imagem_Centralizada
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+
+.icones
+{
+    margin-right: var(--espacamento_unico);
+    width: var(--dimensoes_icones);
+    height: var(--dimensoes_icones);
+}
+.icones path
+{
+    fill: var(--paleta_cinza_escuro);
+}
+.icones-pasta
+{        
+    margin-top: 5px;
+    -webkit-transform: rotate(-90deg) scaleX(-1);
+}
+.icones-arquivo
+{   
+    margin-top: calc(var(--espacamento_unico) / 2);
+    margin-bottom: var(--espacamento_unico);
+}
+.icones-menor
+{
+    margin-right: calc( var(--espacamento_unico)/2 );
+    width: calc( var(--dimensoes_icones)/1.5 );
+    height: calc( var(--dimensoes_icones)/1.5 );
+}
+
+.imagem_Responsiva
+{
+    height: 100%;
+    text-align: right;
+}
+
+
+
+
+table
+{
+    font-size: 1.45rem;
+}
+.table th
+{    
+    border-top: 0px;
+}
+table.table-hover tbody tr:hover {
+    background-color: var(--paleta_cinza_claro); 
+    color: var(--paleta_azul_medio);
+}
+table.table-hover tbody tr:focus {
+    background-color: var(--paleta_cinza_claro); 
+    color: var(--paleta_azul_medio);
+}
+.table tr:focus path
+{
+    fill: var(--paleta_azul_medio) !important;
+}
+.table tr:hover path
+{
+    fill: var(--paleta_azul_medio) !important;
+}
+
+
+
+.navbar-toggler-icon{
+    opacity: 1;
+}
+
+
+
+.modal{
+    padding: 0 !important;    
+}
+.modal-dialog {
+    max-width: 100% !important;
+    height: calc((100%) - (var(--espacamento_unico) * 2));
+    padding: 0;
+    margin: var(--espacamento_unico);
+}
+.modal-content {
+    padding: var(--espacamento_unico);
+    border-color: var(--paleta_cinza_escuro);
+    height: 100%;
+    background-color: var(--paleta_branco);
+}
+@media only screen and (max-width: 767px) {
+    .modal {
+        height: 150%;    
+    }
+}
+
+
+.custom-control-label
+{
+    padding-left: calc( var(--espacamento_unico) / 2 );
+}
+.custom-control-label::before, .custom-control-label::after
+{
+    /*top: .8rem;*/
+    width: calc( var(--dimensoes_icones)/1.5 );
+    height: calc( var(--dimensoes_icones)/1.5 );
+}
+
+.custom-control-input:checked ~ .custom-control-label::before
+{
+    background-color: var( --paleta_azul_claro ) !important;
+}
+
+
+
+svg path {
+    transition : fill 1ms ease-out;
+    -webkit-transition :fill 1ms ease-out;
+    -moz-transition : fill 1ms ease-out;
+    -o-transition :  fill opacity 1ms ease-out;    
+}
+.svg-comHover:hover path
+{
+    fill: var(--paleta_azul_medio) !important;
+}
+.svg-comHover:focus path
+{
+    fill: var(--paleta_azul_medio) !important;
+}
+a:focus .svg-comHover path
+{    
+    fill: var(--paleta_azul_medio) !important;
+}
+.svg-cinza path
+{
+    fill: var(--paleta_cinza_escr-fraco) !important;
+}
+
+abbr[title]
+{
+    text-decoration: none;
+    pointer-events: none;
+}  
+
+/*button
+{
+    cursor: pointer;
+    padding: 0px;
+    border: 0px;
+    background: none;
+}*/
+.n-collps-button
+{
+    cursor: pointer;
+    padding: 0px;
+    border: 0px;
+    background: none;
+    display: none;
+}
+@media only screen and (max-width: 767px) {
+    .n-collps-button {
+        display: block;
+    }
+}

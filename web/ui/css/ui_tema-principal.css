@@ -1,0 +1,32 @@
+:root {
+    /*paleta tema original*/
+    --paleta_azul_escuro: #183E65;    
+    --paleta_azul_medio: #347AB6;
+    --paleta_azul_claro: #337AB7;
+    --paleta_cinza_escuro: #333333;
+    --paleta_cinza_escr-fraco: #7E7D7D;
+    --paleta_cinza_md-escuro: #CCCCCC;
+    --paleta_cinza_medio: #DDDDDD;
+    --paleta_cinza_md-claro: #DFE2E5;
+    --paleta_cinza_claro: #f5f5f5;
+    --paleta_branco: #ffffff;    
+
+
+
+    --espacamento_unico: 10px;
+    --dimensoes_icones: 24px;
+    --tamanho_mudanca-layout: 768px;
+    --border_radius: 3px;
+}
+
+.desaqui
+{
+/*    position: absolute;
+    left: 0px;*/
+    
+    /*background-color: cornflowerblue;*/
+}
+.desaqui2
+{
+    background-color: wheat;
+}

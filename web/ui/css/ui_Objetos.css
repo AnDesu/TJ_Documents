@@ -54,7 +54,7 @@ a:link, a:visited, a:active
 a:hover
 {
     color: var(--paleta_cinza_escuro);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 
@@ -112,6 +112,10 @@ a:hover
     width: calc( var(--dimensoes_icones)/1.5 );
     height: calc( var(--dimensoes_icones)/1.5 );
 }
+.icones-menor path
+{
+    fill: var(--paleta_cinza_escuro);
+}
 
 .imagem_Responsiva
 {
@@ -124,7 +128,7 @@ a:hover
 
 table
 {
-    font-size: 1.45rem;
+    font-size: 1.45rem;    
 }
 .table th
 {    
@@ -138,6 +142,16 @@ table.table-hover tbody tr:focus {
     background-color: var(--paleta_cinza_claro); 
     color: var(--paleta_azul_medio);
 }
+table.table-hover tbody tr:hover a{
+    color: var(--paleta_azul_medio);
+}
+table.table-hover tbody tr:focus a{
+    color: var(--paleta_azul_medio);
+}
+.table tr
+{    
+    transition-duration: 0s;
+}
 .table tr:focus path
 {
     fill: var(--paleta_azul_medio) !important;
@@ -147,12 +161,24 @@ table.table-hover tbody tr:focus {
     fill: var(--paleta_azul_medio) !important;
 }
 
+.colapso
+{    
+}
+.c-icn-ativado
+{    
+    transform: rotate(90deg);
+}
+
+.texto_BreakAll
+{
+    word-break: break-all;
+}
+
 
 
 .navbar-toggler-icon{
     opacity: 1;
 }
-
 
 
 .modal{
@@ -170,12 +196,6 @@ table.table-hover tbody tr:focus {
     height: 100%;
     background-color: var(--paleta_branco);
 }
-@media only screen and (max-width: 767px) {
-    .modal {
-        height: 150%;    
-    }
-}
-
 
 .custom-control-label
 {
@@ -243,4 +263,61 @@ abbr[title]
     .n-collps-button {
         display: block;
     }
+}
+
+.form_campo
+{
+    height: 38px;
+    max-width: 322px;
+    position: relative;
+    margin-top: calc( var(--espacamento_unico) * 1.5 );
+}
+.form_campo-input
+{
+    position: absolute;
+    left: 0px;
+    height: 38px;
+    padding-left: var(--espacamento_unico);
+    padding-right: var(--espacamento_unico);
+    border: 1px solid #D6D9DE;
+    border-radius: var( --border_radius );
+    font-size: 1.45rem; 
+    color: var(--paleta_cinza_escuro);    
+    background-color: var(--paleta_branco);
+}
+.form_campo-button
+{
+    height: 38px;
+    line-height: 1;
+    padding: var(--espacamento_unico);
+    border-radius: var( --border_radius );
+    font-size: 1.45rem; 
+    color: var(--paleta_branco) !important  ;
+    background-color:  var( --paleta_azul_medio );
+}
+.form_campo-button:hover
+{
+    background-color:  var( --paleta_azul_claro ) !important;
+}
+.form_campo-button:active
+{
+    background-color:  var( --paleta_azul_escuro ) !important;
+}
+.form_campo-invalido
+{
+    border-color: var(--paleta_danger);
+    box-shadow: 0px 0px calc(var(--espacamento_unico)/2) var(--paleta_danger);
+}
+.form_campo-invalido::placeholder
+{
+    color: var(--paleta_danger) !important;
+}
+.form_texto
+{
+    min-height: 38px;
+    max-width: 322px;
+    margin-top: calc( var(--espacamento_unico) * 1.5 );
+    text-align: center;
+    font-size: 1.7rem;
+    word-wrap: break-word;
 }

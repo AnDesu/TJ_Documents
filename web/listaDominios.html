@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="robots" content="index, follow">
+
+        <link href="ui/css/css_bootstrap/bootstrap.min.css" rel="stylesheet" >
+        <link href="ui/css/css_bootstrap/bootstrap-grid.min.css" rel="stylesheet" >
+        <link href="ui/css/css_bootstrap/bootstrap-reboot.min.css" rel="stylesheet" >
+
+        <!--Arquivos personalizados-->
+        <!--        <link href="ui/css/ui_tema-principal.css" rel="stylesheet" >-->
+        <link href="ui/css/ui_Objetos.css" rel="stylesheet" >        
+        <link href="ui/css/ui_pag-listaDominios.css" rel="stylesheet" >
+
+
+
+        <title>TJ Docs - Tribunal de Justiça do Estado de Goiás</title>
+    </head>
+
+    <body>
+        <div class="principal">
+
+
+            <div class="princpl-header">
+
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <h1>
+                        <a href="index.html" title="T J dócs" id="Princpl-TJdocs_Logo">
+                            <img class="logo_TJdocs" src="ui/img/Logo_TJdocs.svg">
+                        </a>
+                    </h1>
+
+                    <button class="n-collps-button icones" type="button" data-toggle="collapse" data-target="#navbarPrincipal" title="Expandir menu">
+                        <img class="icones" src="ui/img/Menu_icon.svg">
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarPrincipal">
+
+                        <div class="p-hedr-busca flex-grow-1">
+                            <form class="">
+                                <div class="busca_Principal">
+                                    <input class="w-100 busca_P-input" type="search" placeholder="Digite os termos da sua pesquisa.">    
+                                    <img class="busca_P-icone icones svg-cinza" src="ui/img/Search-Icon.svg">
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="p-hedr-opceos d-flex align-items-center flex-grow-1 texto_BreakAll">
+                            <div class="flex-grow-1">
+                                <a class="icones" href="#" id="paginaHistorico" title="Documentos recentes" role="button">
+                                    <img class="icones svg-comHover" src="ui/img/History-Icon.svg">
+                                </a>
+                            </div>
+
+                            <span class="icones" ></span>
+                            <span class="icones" ></span>
+
+                            <a class="icones theme-link" data-theme="default" href="#" id="alterar_Ui-Tema" title="Modificar Contraste" role="button">
+                                <img class="icones svg-comHover" src="ui/img/High_Contrast-Icon.svg">
+                            </a>
+                            <a class="icones" title="Usuários" href="#" role="button">
+                                <img class="icones svg-comHover" src="ui/img/User_list-Icon.svg">
+                            </a>
+                            <a class="icones" title="Domínios" href="#" role="button">
+                                <img class="icones svg-comHover" src="ui/img/Dominio_icon.svg">
+                            </a>
+
+                            <p>
+                                <a class="icones" href="#" id="paginaLogin" title="Sair do sistema">
+                                    prinny
+                                </a>
+                            </p>
+                        </div>  
+                    </div>
+                </nav>
+
+            </div>
+
+
+            <div class="princpl-conteudo">
+
+                <div class="p-contd-menuTopo d-flex align-items-center">
+                    <div class="p-c-menTp-Endereco flex-grow-1">
+                        <!--<h3>... > Pasta1 > Pasta2 > Pasta4</h3>-->
+                        <h3>
+                            <a href="#">
+                                Domínios > Comissão de Informatização
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="p-c-menTp-Opcoes">
+                        <span>
+                            <a class="icones" title="Ordernado alfabeticamente.">
+                                <img class="icones" src="ui/img/Sort_By-Icon.svg" alt="Aquivos ordernados por data.">
+                            </a>
+                        </span>
+                    </div>
+                </div>        
+
+
+                <div class="p-contd-pastas">
+
+
+                    <div class="table-responsive p-contd-pasts-lista" id="P-DisplayLista">
+                        <h4 class="sr-only" tabindex="0" id="P-Inicio_DisplayLista">
+                            Estrutura do domínio.
+                        </h4>
+                        <table class="table  table-sm table-hover" tabindex="0" summary=" :  Domínio">
+
+                            <thead tabindex="0">
+                                <tr>
+                                    <th id="p-c-p-l-Tabl-Nome">Usuário</th>
+                                    <th id="p-c-p-l-Tabl-Tamanho">Ações</th>
+
+                                </tr>
+                            </thead>
+                            <tbody class="texto_BreakAll">
+                                <tr class="tabByArrow" tabindex="0" id="listDmn_colps0">
+                                    <td headers="p-c-p-l-Tabl-Nome">
+                                        <a href="#" class="colapso" data-colapsoTarget='["listDmn_colps1", "listDmn_colps2"]' data-colapsoArrow="listDmn_colps0_arrow">
+                                            <img class="icones-menor" src="ui/img/Right_arrow-Icon.svg" id="listDmn_colps0_arrow">
+                                            Comissão de Informatização
+                                        </a>
+                                    </td>
+                                    <td headers="p-c-p-l-Tabl-Tamanho">
+                                        <a class="icones" title="Usuários do domínio" href="#" onclick="irListaUsuarios()" role="button">
+                                            <img class="icones" src="ui/img/User_list-Icon.svg">
+                                        </a>
+                                        <a class="icones" href="#" data-toggle="modal" data-target="#modalCriarUsuario" id="alterar_P-DisplayLista" title="Criar usuário" role="button" onclick="modalCriarUsuario_Redimensionar_Init()">
+                                            <img class="icones" src="ui/img/Add_User-Icon.svg">
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr class="tabByArrow d-none" tabindex="0" id="listDmn_colps1">
+                                    <td headers="p-c-p-l-Tabl-Nome">
+                                        <span class="icones"></span>
+                                        <a href="#" class="colapso" data-colapsoTarget='["listDmn_colps2"]' data-colapsoArrow="listDmn_colps1_arrow">
+                                            <img class="icones-menor" src="ui/img/Right_arrow-Icon.svg" id="listDmn_colps1_arrow">
+                                            Atas da Comissão de Informatização
+                                        </a>
+                                    </td>
+                                    <td headers="p-c-p-l-Tabl-Tamanho">
+                                        <a class="icones" title="Usuários do domínio" href="#" role="button">
+                                            <img class="icones" src="ui/img/User_list-Icon.svg">
+                                        </a>
+                                        <a class="icones" href="#" id="alterar_P-DisplayLista" title="Criar usuário" role="button">
+                                            <img class="icones svg-comHover" src="ui/img/Add_User-Icon.svg">
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr class="tabByArrow d-none" tabindex="0" id="listDmn_colps2">
+                                    <td headers="p-c-p-l-Tabl-Nome">
+                                        <span class="icones"></span><span class="icones"></span>
+                                        <span class="icones"></span><span class="icones"></span>
+                                        <a href="#" class="colapso">
+                                            2015
+                                        </a>
+                                    </td>
+                                    <td headers="p-c-p-l-Tabl-Tamanho">
+                                        <a class="icones" title="Usuários do domínio" href="#" role="button">
+                                            <img class="icones" src="ui/img/User_list-Icon.svg">
+                                        </a>
+                                        <a class="icones" href="#" id="alterar_P-DisplayLista" title="Criar usuário" role="button">
+                                            <img class="icones svg-comHover" src="ui/img/Add_User-Icon.svg">
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr class="tabByArrow" tabindex="0" id="listDmn_colps4">
+                                    <td headers="p-c-p-l-Tabl-Nome">
+                                        <a href="#" class="colapso" data-colapsoTarget='["listDmn_colps3"]' data-colapsoArrow="listDmn_colps4_arrow">
+                                            <img class="icones-menor" src="ui/img/Right_arrow-Icon.svg" id="listDmn_colps4_arrow">
+                                            Teste de linha colapso
+                                        </a>
+                                    </td>
+                                    <td headers="p-c-p-l-Tabl-Tamanho">
+                                        <a class="icones" title="Usuários do domínio" href="#" role="button">
+                                            <img class="icones" src="ui/img/User_list-Icon.svg">
+                                        </a>
+                                        <a class="icones" href="#" id="alterar_P-DisplayLista" title="Criar usuário" role="button">
+                                            <img class="icones svg-comHover" src="ui/img/Add_User-Icon.svg">
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr class="tabByArrow d-none" tabindex="0" id="listDmn_colps3">
+                                    <td headers="p-c-p-l-Tabl-Nome">
+                                        <span class="icones"></span><span class="icones"></span>
+                                        <span class="icones"></span>
+                                        <a href="#" class="colapso">
+                                            Atas Comitê Gestor de TIC
+                                        </a>
+                                    </td>
+                                    <td headers="p-c-p-l-Tabl-Tamanho">
+                                        <a class="icones" title="Usuários do domínio" href="#" role="button">
+                                            <img class="icones" src="ui/img/User_list-Icon.svg">
+                                        </a>
+                                        <a class="icones" href="#" id="alterar_P-DisplayLista" title="Criar usuário" role="button">
+                                            <img class="icones svg-comHover" src="ui/img/Add_User-Icon.svg">
+                                        </a>
+                                    </td>
+                                </tr>
+
+
+
+
+                            </tbody>
+                        </table>
+                    </div>     
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <div id="adicionarUsuario_Html"></div>
+
+
+
+            <div class="footer">
+
+                <!--This is a footer-->
+
+            </div>
+
+
+
+            <script type="text/javascript" src="ux/js/jquery-3.3.1.min.js"></script>
+            <script type="text/javascript" src="ux/js/popper.min.js"></script>
+            <script type="text/javascript" src="ux/js/js_bootstrap/bootstrap.min.js"></script>
+            <script type="text/javascript" src="ux/js/imgTag_to_svgTag.js"></script>
+            <script type="text/javascript" src="ux/js/ux_objetos.js"></script>
+            <script type="text/javascript" src="ux/js/ux_pag-listaDominios.js"></script>
+
+
+        </div>
+    </body>
+</html>

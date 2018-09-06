@@ -203,6 +203,7 @@
     padding-left: var(--espacamento_unico);
     padding-right: calc((var(--espacamento_unico) * 3) + var(--dimensoes_icones));
     border: 1px solid #D6D9DE;
+    border-radius: var( --border_radius );
     font-size: 1.45rem; 
     color: var(--paleta_cinza_escuro);    
     background-color: var(--paleta_branco);
